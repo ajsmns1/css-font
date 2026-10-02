@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>글자 크기</title>
+    <style>
+      /* rem은 html의 기본글자크기를 기준으로 한다.(16px) */
+      html {
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      /* em은 부모 요소의 글자크기를 기준으로 한다. */
+      .box {
+        font-size: 10px;
+      }
+      .box p {
+        font-size: 2em;
+      }
+      /* 글자 변형 */
+      .text {
+        text-transform: lowercase; /*소문자 변경*/
+        text-transform: uppercase; /*대문자 변경*/
+        text-transform: capitalize; /*첫글자만 대문자*/
+      }
+      /* 글자 그림자 */
+      h1 {
+        color: aqua;
+        text-shadow: 1px 1px 4px #333;
+        background-color: pink;
+        line-height: 3;
+      }
+      .letter {
+        text-align: justify;
+        letter-spacing: 0px;
+        word-spacing: -2px;
+        text-indent: 1em;
+      }
+      /* 목록 스타일 */
+      ul {
+        list-style: "🚗";
+        list-style: none;
+        padding: 0;
+        margin-left: 100px;
+      }
+      li {
+        list-style-image: url("logo.png");
+        background-position: left center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>제목</h1>
+    <p>안녕하세요</p>
+    <div class="box"><p>반갑습니다.</p></div>
+    <p class="text">Html, Css, JavaScript</p>
+    <p class="letter">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptate
+      error facilis atque possimus quo sint sapiente et architecto, aspernatur
+      quia? Consequatur quisquam magnam placeat praesentium facere non dolor
+      pariatur.
+    </p>
+    <ul>
+      <li>메뉴 01</li>
+      <li>메뉴 02</li>
+      <li>메뉴 03</li>
+    </ul>
+  </body>
+</html>
